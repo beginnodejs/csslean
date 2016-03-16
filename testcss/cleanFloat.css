@@ -1,0 +1,16 @@
+/*通用清除浮动，在需要清除浮动的元素后面加<div class="clean"></div> */
+html body div.clean,
+html body span.clean{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
