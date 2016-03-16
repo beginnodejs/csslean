@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!--
+	作者：510383890@qq.com
+	时间：2016-03-16
+	描述：清除浮动  :after,其实 实质上都是用clear属性 在需要清除浮动的元素后面添加一行块级元素 设置它的clear
+-->
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="cleanFloat.css" />
+	</head>
+
+	<style>
+    	/*.cleanfix:after{
+    		/*content: "020";
+    		display: block;
+    		height: 0;
+    		clear: both;*/
+    	}*/
+    	.cleanfix{
+    		/*zoom: 1;*/
+    		border: 1px solid #FF0000;
+    	}
+    	.left{
+    		border: 1px solid #000000;
+    		float: left;
+    	}
+    	.right{
+    		border: 1px solid #0000FF;
+    		float: left;
+    		/*overflow: hidden;*/
+    		clear: all;
+    	}
+	</style>
+<body>
+	<div class="div cleanfix">
+		<div class="left">left</div>
+		<div class="right">right</div>
+		<div class="clean"></div>
+	</div>
+</body>
+
+</html>
